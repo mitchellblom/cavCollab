@@ -1,21 +1,44 @@
-body {
+html {
 	background-color: 424242;
-};
+	font-family: sans-serif;
+}
 
 h1 {
-	color: red;
-	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);;
+	color: aFaFaF;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	margin: 3% auto;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+}
+
+input {
+	float: left;
+	margin: 0 0 0 20%;
+	text-align: left;
+}
+
+.allComponents {
+	display: flex;
+	justify-content: center;
+
 }
 
 .component {
-	display: flex;
-	justify-content: row;
-	background-color: red;
+	background-color: darkred;
 	border: 2px solid black;
-	border-radius: 10%;
-};
+	border-radius: 15%;
+	word-wrap: wrap;
+	text-align: center;
+	width: 220px;
+	min-height: 200px;
+}
 
 .percentage {
+	color: #FFF;
 	font-size: 1.1em;
-	color: red;
+}
+
+.grade {
+
 }

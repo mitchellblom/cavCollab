@@ -1,4 +1,3 @@
-<<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,40 +5,48 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
 	<h1>Collaboration Scale</h1>
+	<div class="allComponents">
+		<div class="component">
+			<h2 class="percentage" id="landedPerc">15%</h2>
+			<h2>Landed</h2>
+				<input type="radio" name="landed">Price<br>
+				<input type="radio" name="landed">Relationship<br>
+		</div>
+		<div class="component">
+			<h2 class="percentage" id="closePerc">10%</h2>
+			<h2>Load Conversion</h2>
+				<input type="radio" name="close">Load Conversion<br>
+				<input type="radio" name="close">Email<br>
+				<input type="radio" name="close">TMS<br>
+		</div>
+		<div class="component">
+			<h2 class="percentage" id="accessPerc">30%</h2>
+			<h2>Accessibility</h2>
+				<input type="radio" name="access">Yes<br>
+				<input type="radio" name="access">Sometimes<br>
+				<input type="radio" name="access">No<br>
+		</div>
+		<div class="component">
+			<h2 class="percentage" id="resolutionPerc">25%</h2>
+			<h2>Issue Resolution</h2>
+				<input type="radio" name="resolution">Yes<br>
+				<input type="radio" name="resolution">Sometimes<br>
+				<input type="radio" name="resolution">No<br>
+		</div>
+		<div class="component">
+			<h2 class="percentage" id="feedbackPerc">20%</h2>
+			<h2>Rate/Bid Feedback</h2>
+				<input type="radio" name="resolution">Yes<br>
+				<input type="radio" name="resolution">Sometimes<br>
+				<input type="radio" name="resolution">No<br>
+		</div>
+	</div>
+	<div class="grade">
 		
-	<div class="component">
-		<h2 class="percentage" id="landedPerc"></h2>
-		<h2>Landed</h2>
+<!-- 		final score appears here -->
 
 	</div>
-
-	<div class="component">
-		<h2 class="percentage" id="closePerc"></h2>
-		<h2>Load Conversion/Close</h2>
-
-	</div>
-	<div class="component">
-		<h2 class="percentage" id="accessPerc"></h2>
-		<h2>Accessibility</h2>
-
-	</div>
-
-	<div class="component">
-		<h2 class="percentage" id="resolutionPerc"></h2>
-		<h2>Issue Resolution</h2>
-
-	</div>
-
-	<div class="component">
-		<h2 class="percentage" id="feedbackPerc"></h2>
-		<h2>Rate/Bid Feedback</h2>
-
-	</div>
-
-
 <script type="text/javascript" src="scale.js"></script>
-
 </body>
 </html>
