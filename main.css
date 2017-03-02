@@ -1,0 +1,21 @@
+body {
+	background-color: 424242;
+};
+
+h1 {
+	color: red;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);;
+}
+
+.component {
+	display: flex;
+	justify-content: row;
+	background-color: red;
+	border: 2px solid black;
+	border-radius: 10%;
+};
+
+.percentage {
+	font-size: 1.1em;
+	color: red;
+}
