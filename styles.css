@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+.toppings {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 3%;
+}
+
+.menuItem {
+	width: 23%;
+	border: 2px solid black;
+	border-radius: 5%;
+	flex-direction: row;
+}
+
+.menuItem input {
+	width: 100px;
+}
+
+#toppingsSelected {
+	height: 10px;
+}
+
+label {
+	width: 110px;
+}

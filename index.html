@@ -1,59 +1,33 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>Collaboration Scale</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
 	<h1>Collaboration Scale</h1>
-	<div class="allComponents">
-		<div class="component">
-			<h2 class="percentage" id="landedPerc">15%</h2>
-			<h2>Landed</h2>
-				<input type="radio" name="landed">Price<br>
-				<input type="radio" name="landed">Relationship<br>
+
+	<div class="toppings">
+		<div class="metric" id="landedMetric">
+			<h4>Landed:</h4>
+			<label for="Price"><input type="checkbox" name="landed" value="Price">Price</label>
+			<label for="Relationship"><input type="checkbox" name="landed" value="Relationship" class="rmMeat">Relationship</label>
 		</div>
-		<div class="component">
-			<h2 class="percentage" id="closePerc">10%</h2>
-			<h2>Load Conversion</h2>
-				<input type="radio" name="close">Load Conversion<br>
-				<input type="radio" name="close">Email<br>
-				<input type="radio" name="close">TMS<br>
-		</div>
-		<div class="component">
-			<h2 class="percentage" id="accessPerc">30%</h2>
-			<h2>Accessibility</h2>
-				<input type="radio" name="access">Yes<br>
-				<input type="radio" name="access">Sometimes<br>
-				<input type="radio" name="access">No<br>
-		</div>
-		<div class="component">
-			<h2 class="percentage" id="resolutionPerc">25%</h2>
-			<h2>Issue Resolution</h2>
-				<input type="radio" name="resolution">Yes<br>
-				<input type="radio" name="resolution">Sometimes<br>
-				<input type="radio" name="resolution">No<br>
-		</div>
-		<div class="component">
-			<h2 class="percentage" id="feedbackPerc">20%</h2>
-			<h2>Rate/Bid Feedback</h2>
-				<input type="radio" name="resolution">Yes<br>
-				<input type="radio" name="resolution">Sometimes<br>
-				<input type="radio" name="resolution">No<br>
-		</div>
+
 	</div>
 	<div>
-<!-- 			<h2>Selected Keys</h2>
-			<p id="checkedScores"></p>		 -->					
+		<h4>Selected Metrics</h4>
+		<p id="scoresSelected"></p>							
 
-			<h2>Final Score:</h2>
-			<p id="grade">0%</p>
-
+		<h4>Total score:</h4>
+		<p id="totalScore">0%</p>
 	</div>
-	
-<script type="text/javascript" src="scale.js"></script>
-<script type="text/javascript" src="DOMhandler.js"></script>
-<script type="text/javascript" src="landed.js"></script>
+
+<script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+<script type="text/javascript" src="javascripts/DOMhandler.js"></script>
+<script type="text/javascript" src="javascripts/Meat.js"></script>
 
 </body>
 </html>

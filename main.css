@@ -21,7 +21,6 @@ input {
 .allComponents, h2, p {
 	display: flex;
 	justify-content: center;
-
 }
 
 .component {

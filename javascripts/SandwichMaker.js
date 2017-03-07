@@ -1,4 +1,4 @@
-var scale = (function() {
+var CollabScale = (function() {
 
     var totalScore = 0;
 
@@ -6,8 +6,9 @@ var scale = (function() {
         getPrice: function() {
             return totalScore;
         },
-        adjustPrice: function(currentScore) {    //currentScore comes from addingLandedScore, etc.
+        adjustPrice: function(currentScore) {    //currentScore comes from addingMeatPrice, addingCheesePrice, etc.  
             totalScore += currentScore;
+            // console.log("totalScore", totalScore);
             adjustTotalToDOM(totalScore);
         }
     };
