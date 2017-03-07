@@ -1,5 +1,6 @@
 //////////////////// REFERENCES /////////////////////////
 var landedChoice = document.getElementById("landedMetric");
+// var radios = document.getElementsByTagName("input");
 var checkedScores = [];
 var checkedScoresToDOM = document.getElementById("scoresSelected");
 
@@ -14,7 +15,7 @@ var totalScoreToDOM = document.getElementById("totalScore");
 
 //////////////////// ADDING METRICS ///////////////////
 
-landedChoice.addEventListener("change", function(e) {
+landedChoice.addEventListener("click", function(e) {
     console.log(e);
     if (e.target.checked) {
         CollabScale.addLanded(e.target.value);
@@ -25,6 +26,19 @@ landedChoice.addEventListener("change", function(e) {
         removeUncheckedScoresFromDom(e);
     }
 });
+
+
+//From SOF
+
+// document.addEventListener("click", function() {
+//     for(var i = 0; i < inputs.length; i++) {
+//     if(inputs[i].type.toLowerCase() == 'radio') {
+//         alert(inputs[i].value);
+//     }
+// }
+// });
+// var inputs = document.getElementsByTagName('input');
+
 
 //////////////////// SCORE TO DOM///////////////////
 
