@@ -15,6 +15,7 @@ var totalScoreToDOM = document.getElementById("totalScore");
 //////////////////// ADDING METRICS ///////////////////
 
 landedChoice.addEventListener("change", function(e) {
+    console.log(e);
     if (e.target.checked) {
         CollabScale.addLanded(e.target.value);
         checkedScores.push(e.target.value);                             

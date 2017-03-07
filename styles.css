@@ -1,28 +1,45 @@
+
 body {
+	background-color: #424242;
+	color: white;
+	font-family: sans-serif;
 	text-align: center;
 }
 
-.toppings {
+h1 {
+	color: aFaFaF;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	margin: 3% auto;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+}
+
+.allMetrics {
 	display: flex;
 	justify-content: space-around;
 	padding: 0 3%;
 }
 
-.menuItem {
-	width: 23%;
+.metric {
+	background-color: darkred;
 	border: 2px solid black;
-	border-radius: 5%;
-	flex-direction: row;
-}
-
-.menuItem input {
-	width: 100px;
-}
-
-#toppingsSelected {
-	height: 10px;
+	border-radius: 15%;
+	word-wrap: wrap;
+	text-align: center;
+	width: 220px;
+	min-height: 200px;
 }
 
 label {
 	width: 110px;
+}
+
+#totalScore {
+	color: #FFF;
+	font-size: 1.1em;
+}
+
+.grade {
+
 }
