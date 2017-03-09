@@ -5,15 +5,12 @@ var CollabScale = (function(maker) {
         "Relationship": 15,
     };
 
-    maker.addLanded = function(landed) { // landed is the same as e.target.value passed from the DOMhandler.js
-            var selectedToppings = [];
+    maker.addLanded = function(landed, metricGroup) { // landed is the same as e.target.value passed from the DOMhandler.js
+            console.log(landed, metricGroup);
+            CollabScale.resetSubtotal();
+            // clear subtotal every new click of a radio button within a metric
             var addLandedScore = landedScores[landed];
-            CollabScale.adjustPrice(addLandedScore);
-    };
-    maker.subtractLanded = function(landed) {
-        var addingLandedScore = landedScores[landed];
-        CollabScale.adjustPrice(-addingLandedScore);
-        var scoresSelectedToDOM = document.getElementById("scoresSelected");
+            // CollabScale.adjustPrice(addLandedScore);
     };
 
     return maker;
