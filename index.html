@@ -8,20 +8,60 @@
 <body>
 
 	<h1>Collaboration Scale</h1>
+	
+	<div class="identifiers">
+		<input type="text" placeholder="Bill To">
+<!-- 		<br> -->
+		<input type="text" placeholder="Your Name">
+		<br>
+	</div>
 
 	<div class="allMetrics">
 		<div class="metric" id="landedMetric">
-			<h4>Landed:</h4>
-			<label for="Price"><input type="radio" name="landed" value="Price">Price</label>
+			<h2 class="percentage" id="landedPerc">15%</h2>
+			<h2>Landed</h2>
+			<label for="Price"><input type="radio" name="landed" value="Price">Price</label><br>
 			<label for="Relationship"><input type="radio" name="landed" value="Relationship">Relationship</label>
+		</div>
+
+		<div class="metric" id="conversionMetric">
+			<h2 class="percentage" id="conversionPerc">10%</h2>
+			<h2>Load Conversion</h2>
+			<label for="Load Conversion"><input type="radio" name="conversion" value="Load Conversion">Phone</label><br>
+			<label for="Email"><input type="radio" name="conversion" value="Email">Email</label><br>
+			<label for="TMS"><input type="radio" name="conversion" value="TMS">TMS</label>
+		</div>
+
+		<div class="metric" id="accessMetric">
+			<h2 class="percentage" id="accessPerc">30%</h2>
+			<h2>Accessibility</h2>
+			<label for="Yes"><input type="radio" name="accessibility" value="Yes">Yes</label><br>
+			<label for="No"><input type="radio" name="accessibility" value="No">No</label><br>
+			<label for="Sometimes"><input type="radio" name="accessibility" value="Sometimes">Sometimes</label>
+		</div>
+
+		<div class="metric" id="resolutionMetric">
+			<h2 class="percentage" id="resolutionPerc">25%</h2>
+			<h2>Issue Resolution</h2>
+			<label for="Yes"><input type="radio" name="accessibility" value="Yes">Yes</label><br>
+			<label for="No"><input type="radio" name="accessibility" value="No">No</label><br>
+			<label for="Sometimes"><input type="radio" name="accessibility" value="Sometimes">Sometimes</label>
+		</div>
+
+		<div class="metric" id="feedbackMetric">
+			<h2 class="percentage" id="feedbackPerc">20%</h2>
+			<h2>Rate/Bid Feedback</h2>
+			<label for="Yes"><input type="radio" name="accessibility" value="Yes">Yes</label><br>
+			<label for="No"><input type="radio" name="accessibility" value="No">No</label><br>
+			<label for="Sometimes"><input type="radio" name="accessibility" value="Sometimes">Sometimes</label>
 		</div>
 
 	</div>
 	<div>
-		<h4>Selected Metrics</h4>
+		<h2>Selected Metrics</h2>
 		<p id="scoresSelected"></p>							
 
-		<h4>Total score:</h4>
+		<h2>Total score:</h2>
 		<p id="totalScore">0%</p>
 	</div>
 
