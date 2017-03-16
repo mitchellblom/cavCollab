@@ -10,9 +10,9 @@
 	<h1>Collaboration Scale</h1>
 	
 	<div class="identifiers">
-		<input type="text" placeholder="Bill To">
+		<input type="text" class="textboxes" placeholder="Bill To">
 <!-- 		<br> -->
-		<input type="text" placeholder="Your Name">
+		<input type="text" class="textboxes" placeholder="Your Name">
 		<br>
 	</div>
 
@@ -56,12 +56,16 @@
 			<label for="Sometimes"><input type="radio" name="accessibility" value="Sometimes">Sometimes</label>
 		</div>
 
+
 	</div>
 	<div>
-		<h2>Selected Metrics</h2>
-		<p id="scoresSelected"></p>							
+	
+<!-- 		<h2>Selected Metrics</h2>
+		<p id="scoresSelected"></p>		 -->	
 
-		<h2>Total score:</h2>
+		<button>Submit</button>
+
+		<h2 id="total-label">Total score:</h2>
 		<p id="totalScore">0%</p>
 	</div>
 
